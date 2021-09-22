@@ -1,17 +1,68 @@
-header{
-    .name{
-.fiji{
-    color: rgb(200, 170, 228);
-}
+    @import "./_women.scss";
+    
+header {
+    .fiji{  display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 600px ;
+        color: #CAB8FF;
+        
+    .logo{
+        
+            width: 60px;
+        height: 50px;
+        } 
+        
     }
-    form{
-        .btn{
-    border: none;
-}
+    .icono3{
+            height: 60px;
+        margin-left: 600px;
+        justify-content: space-around;
+        .icono{ 
+            color:  #CAB8FF;
+            margin-top: 24px;
+        }
     }
-    .sale{
-        background-color: blueviolet;
+    }
+
+
+    form {
+        .btn {
+            border: none;
+        }
+    }
+
+
+
+main {
+
+    .card
+    {
+        margin-bottom: 300px;
+        border: none;
         width: 80%;
-        height: 360px;
+        height: 260px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        .photocard{ 
+        
+            height: 260px;
+            width: 200px;
+        }
     }
+    .new {
+        margin-left: 155px;
+        margin-right: 155px;
+        height: 300px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+footer {
+
+        margin-top: 100px;
+        border-top: 1px solid rgb(243, 237, 237);
+    
 }
