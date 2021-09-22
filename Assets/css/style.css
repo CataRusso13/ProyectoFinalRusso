@@ -14,19 +14,29 @@ main {
     background-color: white;
     font-size: smaller; }
     main .item-text h2 {
-      font-size: large; }
+      font-size: small;
+      color: #949494; }
+    main .item-text p {
+      font-weight: bold;
+      transform: translateX(55px); }
   main .item-img {
-    width: 220px;
+    width: 200px;
     height: 300px;
     max-width: 100%;
     display: block; }
+
+.pagination {
+  margin-right: 60px;
+  transform: translateY(1340px); }
+  .pagination a {
+    color: #e9bede; }
 
 header .fiji {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-left: 600px;
-  color: #CAB8FF; }
+  color: #BEAEE2; }
   header .fiji .logo {
     width: 60px;
     height: 50px; }
@@ -36,7 +46,7 @@ header .icono3 {
   margin-left: 600px;
   justify-content: space-around; }
   header .icono3 .icono {
-    color: #CAB8FF;
+    color: #BEAEE2;
     margin-top: 24px; }
 
 form .btn {
