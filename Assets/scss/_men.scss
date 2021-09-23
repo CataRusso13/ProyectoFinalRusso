@@ -1,0 +1,51 @@
+@mixin size-produ {
+    width: 200px;
+    height: 300px;
+    max-width: 100%;
+    display: block;
+}
+
+@mixin color-sec {
+    color: #e9bede
+}
+
+@mixin color-font {
+    color: rgb(148, 148, 148);
+}
+main{
+.codemen{
+    transform: translateX(200px);
+}
+.item-text {
+    h2 {
+        font-size: small;
+        color: rgb(148, 148, 148);
+    }
+
+    p {
+        font-weight: bold;
+        transform: translateX(55px);
+    }
+
+}
+
+.item-img {
+    @include size-produ;
+    transform: translateX(-40px);
+
+}
+
+
+.pagination {
+    margin-right: 60px;
+    transform: translateY(20px);
+    a {
+        @include color-sec();
+    }
+}
+}
+footer {
+    margin-top: 100px;
+    border-top: 1px solid rgb(243, 237, 237);
+
+}

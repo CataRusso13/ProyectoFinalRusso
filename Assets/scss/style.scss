@@ -1,28 +1,55 @@
     @import "./_women.scss";
-    
-header {
-    .fiji{  display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-left: 600px ;
-        color: #BEAEE2;
-        
-    .logo{
-        
-            width: 60px;
-        height: 50px;
-        } 
-        
+    @import "./_men.scss";
+    @import "./_carrito.scss";
+
+    @mixin size-produ {
+        width: 200px;
+        height: 300px;
+        max-width: 100%;
+        display: block;
     }
-    .icono3{
-            height: 60px;
-        margin-left: 600px;
-        justify-content: space-around;
-        .icono{ 
-            color:  #BEAEE2;
-            margin-top: 24px;
+
+    header {
+        display: flex;
+        flex-direction: column;
+
+        .fiji {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            color: #BEAEE2;
+
+            .marca {
+                padding-right: 1rem;
+            }
+
+            .fijiylogo {
+                display: flex;
+                width: 120%;
+                justify-content: flex-end;
+
+            }
+
+            .logo {
+
+                width: 60px;
+                height: 50px;
+            }
+
         }
-    }
+
+        .icono3 {
+            height: 60px;
+            display: flex;
+            justify-content: end;
+            width: 100%;
+
+            .icono {
+                color: #BEAEE2;
+                margin-top: 24px;
+            }
+        }
+
     }
 
 
@@ -34,35 +61,51 @@ header {
 
 
 
-main {
+    main {
 
-    .card
-    {
-        margin-bottom: 300px;
-        border: none;
-        width: 80%;
-        height: 260px;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: row;
-        .photocard{ 
-        
+        .card {
+            margin-bottom: 300px;
+            border: none;
+            width: 80%;
             height: 260px;
-            width: 200px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            transform: translateX(-60px);
+
+            .photocard {
+                @include size-produ;
+
+                transform: translateY(130px);
+
+
+            }
+        }
+
+        .new {
+            margin-left: 155px;
+            margin-right: 155px;
+            height: 300px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        .sale {
+            transform: translateX(-170px);
+            margin-top: 10px;
+        }
+
+        .free {
+            width: 1550px;
+            margin-top: 10px;
+            transform: translateX(-10px);
+            transform: translateY(-620px);
         }
     }
-    .new {
-        margin-left: 155px;
-        margin-right: 155px;
-        height: 300px;
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-}
 
-footer {
+    footer {
 
-        margin-top: 100px;
+        margin-top: 60px;
         border-top: 1px solid rgb(243, 237, 237);
-    
-}
+
+    }

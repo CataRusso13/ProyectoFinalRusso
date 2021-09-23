@@ -9,15 +9,14 @@ main .container {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 60px; }
 
-main .item-text {
-  background-color: white;
-  font-size: smaller; }
-  main .item-text h2 {
-    font-size: small;
-    color: #949494; }
-  main .item-text p {
-    font-weight: bold;
-    transform: translateX(55px); }
+main .item-text h2 {
+  font-size: small;
+  color: #949494;
+  transform: translateX(-40px); }
+
+main .item-text p {
+  font-weight: bold;
+  margin-top: 20px; }
 
 main .item-img {
   width: 200px;
@@ -25,29 +24,78 @@ main .item-img {
   max-width: 100%;
   display: block; }
 
-.pagination {
+main .pagination {
   margin-right: 60px;
-  transform: translateY(1300px); }
-  .pagination a {
+  transform: translateY(20px); }
+  main .pagination a {
     color: #e9bede; }
 
-header .fiji {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-left: 600px;
-  color: #BEAEE2; }
-  header .fiji .logo {
-    width: 60px;
-    height: 50px; }
+main footer {
+  margin-top: 100px;
+  border-top: 1px solid #f3eded; }
 
-header .icono3 {
-  height: 60px;
-  margin-left: 600px;
-  justify-content: space-around; }
-  header .icono3 .icono {
-    color: #BEAEE2;
-    margin-top: 24px; }
+main .codemen {
+  transform: translateX(200px); }
+
+main .item-text h2 {
+  font-size: small;
+  color: #949494; }
+
+main .item-text p {
+  font-weight: bold;
+  transform: translateX(55px); }
+
+main .item-img {
+  width: 200px;
+  height: 300px;
+  max-width: 100%;
+  display: block;
+  transform: translateX(-40px); }
+
+main .pagination {
+  margin-right: 60px;
+  transform: translateY(20px); }
+  main .pagination a {
+    color: #e9bede; }
+
+footer {
+  margin-top: 100px;
+  border-top: 1px solid #f3eded; }
+
+main .carrito {
+  height: 300px;
+  width: 800px;
+  background-color: aqua;
+  transform: translateX(-300px); }
+
+main .infocarrito {
+  list-style: none; }
+
+header {
+  display: flex;
+  flex-direction: column; }
+  header .fiji {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    color: #BEAEE2; }
+    header .fiji .marca {
+      padding-right: 1rem; }
+    header .fiji .fijiylogo {
+      display: flex;
+      width: 120%;
+      justify-content: flex-end; }
+    header .fiji .logo {
+      width: 60px;
+      height: 50px; }
+  header .icono3 {
+    height: 60px;
+    display: flex;
+    justify-content: end;
+    width: 100%; }
+    header .icono3 .icono {
+      color: #BEAEE2;
+      margin-top: 24px; }
 
 form .btn {
   border: none; }
@@ -59,18 +107,32 @@ main .card {
   height: 260px;
   display: flex;
   justify-content: space-around;
-  flex-direction: row; }
+  flex-direction: row;
+  transform: translateX(-60px); }
   main .card .photocard {
-    height: 260px;
-    width: 200px; }
+    width: 200px;
+    height: 300px;
+    max-width: 100%;
+    display: block;
+    transform: translateY(130px); }
 
 main .new {
   margin-left: 155px;
   margin-right: 155px;
   height: 300px;
   margin-top: 40px;
-  margin-bottom: 40px; }
+  margin-bottom: 20px; }
+
+main .sale {
+  transform: translateX(-170px);
+  margin-top: 10px; }
+
+main .free {
+  width: 1550px;
+  margin-top: 10px;
+  transform: translateX(-10px);
+  transform: translateY(-620px); }
 
 footer {
-  margin-top: 100px;
+  margin-top: 60px;
   border-top: 1px solid #f3eded; }

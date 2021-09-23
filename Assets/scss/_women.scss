@@ -1,6 +1,22 @@
-main {
-    // margin-left: 60px;
+@mixin size-produ {
+    width: 200px;
+    height: 300px;
+    max-width: 100%;
+    display: block;
+}
 
+@mixin color-sec {
+    color: #e9bede
+}
+
+@mixin color-font {
+    color: rgb(148, 148, 148);
+}
+
+
+
+
+main {
 
     .container {
         display: grid;
@@ -14,35 +30,36 @@ main {
         grid-gap: 60px;
     }
 
-
     .item-text {
         h2 {
             font-size: small;
             color: rgb(148, 148, 148);
-        }
-
-        background-color: white;
-        font-size: smaller;
-
+            transform: translateX(-40px);
+}
+        
         p {
             font-weight: bold;
-            transform: translateX(55px);
+            margin-top: 20px;
         }
 
     }
 
     .item-img {
-        width: 200px;
-        height: 300px;
-        max-width: 100%;
-        display: block;
+        @include size-produ
     }
-}
-.pagination{
-    margin-right:60px ;
-    transform: translateY(1300px);
-    a{
-        color:#e9bede ;
-    }
-}
 
+
+    .pagination {
+        margin-right: 60px;
+        transform: translateY(20px);
+        a {
+            @include color-sec();
+        }
+    }
+
+    footer {
+        margin-top: 100px;
+        border-top: 1px solid rgb(243, 237, 237);
+
+    }
+}
