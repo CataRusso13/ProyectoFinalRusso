@@ -23,7 +23,7 @@ main{
     h2 {
         margin-top: 10px;
         font-size: small;
-        color: rgb(148, 148, 148);
+       @include color-font();
     }
 
     .red{
@@ -44,8 +44,7 @@ main{
     .incorrecto{
         transform: translateX(10px);
     text-decoration: line-through;
-    color: rgb(195, 195, 195);
-    
+    @include color-font();
     font-size: small
 }
 }

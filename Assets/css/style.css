@@ -71,13 +71,34 @@ footer {
   border-top: 1px solid #f3eded; }
 
 main .carrito {
-  height: 300px;
-  width: 800px;
-  background-color: aqua;
-  transform: translateX(-300px); }
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #b6afaf;
+  border-top: 1px solid #b6afaf;
+  height: 400px;
+  transform: translateX(-100px);
+  background-color: red; }
+
+main .code {
+  transform: translateY(-80px); }
+
+main .item-total {
+  margin-top: 40px;
+  transform: translateX(-100px); }
+
+main .carr-img {
+  width: 108px;
+  height: 150px; }
 
 main .infocarrito {
-  list-style: none; }
+  list-style: none;
+  transform: translateX(-80px);
+  width: 280px; }
+  main .infocarrito h1 {
+    font-size: medium; }
+  main .infocarrito li {
+    color: #949494;
+    font-size: small; }
 
 main .codemen {
   transform: translateX(200px); }
@@ -135,7 +156,7 @@ main .container .item-text .btn {
 main .container .item-text .incorrecto {
   transform: translateX(10px);
   text-decoration: line-through;
-  color: #c3c3c3;
+  color: #949494;
   font-size: small; }
 
 main .container .item-img {

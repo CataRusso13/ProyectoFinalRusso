@@ -22,7 +22,7 @@ main{
 .item-text {
     h2 {
         font-size: small;
-        color: rgb(148, 148, 148);
+        @include color-font();
     }
 
     p {

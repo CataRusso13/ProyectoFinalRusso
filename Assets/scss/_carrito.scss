@@ -1,13 +1,43 @@
-main{
-    .carrito{
-        height: 300px;
-        width: 800px;
-        background-color: aqua;
-        transform: translateX(-300px);
+@mixin color-font {
+    color: rgb(148, 148, 148);
+}
+
+main {
+    .carrito {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid rgb(182, 175, 175);
+        border-top: 1px solid rgb(182, 175, 175);
+        height: 400px;
+        transform: translateX(-100px);
+        background-color: red;
+    }
+.code{
+    transform: translateY(-80px);
+}
+    .item-total {
+        margin-top: 40px;
+        transform: translateX(-100px);
     }
 
+    .carr-img {
+        width: 108px;
+        height: 150px;
+    }
 
-    .infocarrito{
+    .infocarrito {
         list-style: none;
+        transform: translateX(-80px);
+        width: 280px;
+
+
+        h1 {
+            font-size: medium;
+        }
+
+        li {
+            @include color-font;
+            font-size: small;
+        }
     }
 }
