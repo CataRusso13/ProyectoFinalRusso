@@ -18,21 +18,36 @@ main{
 }
 
 .container{
+
 .item-text {
     h2 {
+        margin-top: 10px;
         font-size: small;
         color: rgb(148, 148, 148);
     }
 
-    p {
+    .red{
+    display: flex;
+        color: #de1b3c;
         font-weight: bold;
-        transform: translateX(10px);
+        align-items: center;
     }
     .btn{ 
         color:white;
         background-color:#BEAEE2;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px
+    ;
 
     }
+    .incorrecto{
+        transform: translateX(10px);
+    text-decoration: line-through;
+    color: rgb(195, 195, 195);
+    
+    font-size: small
+}
 }
 
 .item-img {

@@ -41,7 +41,11 @@ main {
             font-weight: bold;
             margin-top: 20px;
         }
-
+        .btn{ 
+            color:white;
+            background-color:#BEAEE2;
+    
+        }
     }
 
     .item-img {
@@ -60,6 +64,5 @@ main {
     footer {
         margin-top: 100px;
         border-top: 1px solid rgb(243, 237, 237);
-
     }
 }

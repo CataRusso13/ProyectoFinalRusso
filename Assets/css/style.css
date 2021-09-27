@@ -18,6 +18,10 @@ main .item-text p {
   font-weight: bold;
   margin-top: 20px; }
 
+main .item-text .btn {
+  color: white;
+  background-color: #BEAEE2; }
+
 main .item-img {
   width: 200px;
   height: 300px;
@@ -37,15 +41,19 @@ main footer {
 main .codemen {
   transform: translateX(200px); }
 
-main .item-text h2 {
+main .container .item-text h2 {
   font-size: small;
   color: #949494; }
 
-main .item-text p {
+main .container .item-text p {
   font-weight: bold;
-  transform: translateX(55px); }
+  transform: translateX(10px); }
 
-main .item-img {
+main .container .item-text .btn {
+  color: white;
+  background-color: #BEAEE2; }
+
+main .container .item-img {
   width: 200px;
   height: 300px;
   max-width: 100%;
@@ -70,6 +78,82 @@ main .carrito {
 
 main .infocarrito {
   list-style: none; }
+
+main .codemen {
+  transform: translateX(200px); }
+
+main .container .item-text h2 {
+  font-size: small;
+  color: #949494; }
+
+main .container .item-text p {
+  font-weight: bold;
+  transform: translateX(10px); }
+
+main .container .item-text .btn {
+  color: white;
+  background-color: #BEAEE2; }
+
+main .container .item-img {
+  width: 200px;
+  height: 300px;
+  max-width: 100%;
+  display: block;
+  transform: translateX(-40px); }
+
+main .pagination {
+  margin-right: 60px;
+  transform: translateY(20px); }
+  main .pagination a {
+    color: #e9bede; }
+
+footer {
+  margin-top: 100px;
+  border-top: 1px solid #f3eded; }
+
+main .codemen {
+  transform: translateX(200px); }
+
+main .container .item-text h2 {
+  margin-top: 10px;
+  font-size: small;
+  color: #949494; }
+
+main .container .item-text .red {
+  display: flex;
+  color: #de1b3c;
+  font-weight: bold;
+  align-items: center; }
+
+main .container .item-text .btn {
+  color: white;
+  background-color: #BEAEE2;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; }
+
+main .container .item-text .incorrecto {
+  transform: translateX(10px);
+  text-decoration: line-through;
+  color: #c3c3c3;
+  font-size: small; }
+
+main .container .item-img {
+  width: 200px;
+  height: 300px;
+  max-width: 100%;
+  display: block;
+  transform: translateX(-40px); }
+
+main .pagination {
+  margin-right: 60px;
+  transform: translateY(20px); }
+  main .pagination a {
+    color: #e9bede; }
+
+footer {
+  margin-top: 100px;
+  border-top: 1px solid #f3eded; }
 
 header {
   display: flex;
