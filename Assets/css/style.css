@@ -73,18 +73,24 @@ footer {
 main .carrito {
   display: flex;
   align-items: center;
+  transform: translateX(200px);
+  width: 80%;
+  margin-top: 80px;
   border-bottom: 1px solid #b6afaf;
   border-top: 1px solid #b6afaf;
-  height: 400px;
-  transform: translateX(-100px); }
-
-main .code {
-  display: flex;
-  flex-direction: column; }
-
-main .item-total {
-  margin-top: 40px;
-  transform: translateX(-100px); }
+  height: 400px; }
+  main .carrito .btn {
+    color: white;
+    background-color: #BEAEE2; }
+  main .carrito .checkout {
+    display: flex;
+    flex-direction: column;
+    transform: translateX(120px);
+    width: 260px; }
+    main .carrito .checkout .titleval {
+      align-self: flex-start; }
+    main .carrito .checkout .valores {
+      align-self: flex-end; }
 
 main .carr-img {
   width: 108px;
@@ -92,13 +98,22 @@ main .carr-img {
 
 main .infocarrito {
   list-style: none;
-  transform: translateX(-80px);
   width: 280px; }
   main .infocarrito h1 {
     font-size: medium; }
   main .infocarrito li {
     color: #949494;
     font-size: small; }
+
+.code {
+  display: flex;
+  flex-direction: column;
+  transform: translateX(30px);
+  width: 200px; }
+  .code .promo {
+    width: 160px;
+    align-self: center;
+    margin-bottom: 10px; }
 
 main .codemen {
   transform: translateX(200px); }
