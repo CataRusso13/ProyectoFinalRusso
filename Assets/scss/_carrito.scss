@@ -10,11 +10,14 @@ main {
         border-top: 1px solid rgb(182, 175, 175);
         height: 400px;
         transform: translateX(-100px);
-        background-color: red;
     }
-.code{
-    transform: translateY(-80px);
-}
+
+    .code {
+        display: flex;
+        flex-direction: column;
+
+    }
+
     .item-total {
         margin-top: 40px;
         transform: translateX(-100px);

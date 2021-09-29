@@ -76,11 +76,11 @@ main .carrito {
   border-bottom: 1px solid #b6afaf;
   border-top: 1px solid #b6afaf;
   height: 400px;
-  transform: translateX(-100px);
-  background-color: red; }
+  transform: translateX(-100px); }
 
 main .code {
-  transform: translateY(-80px); }
+  display: flex;
+  flex-direction: column; }
 
 main .item-total {
   margin-top: 40px;
@@ -219,6 +219,7 @@ main .card {
     height: 300px;
     max-width: 100%;
     display: block;
+    margin-top: 80px;
     transform: translateY(130px); }
 
 main .new {
@@ -234,7 +235,7 @@ main .sale {
 
 main .free {
   width: 1550px;
-  margin-top: 10px;
+  margin-top: 20px;
   transform: translateX(-10px);
   transform: translateY(-620px); }
 
