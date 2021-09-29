@@ -3,6 +3,8 @@
     @import "./_carrito.scss";
     @import "./_accessories.scss";
     @import "./_sale.scss";
+    @import "./_checkout.scss";
+    @import "./producto1W";
 
     @mixin size-produ {
         width: 200px;
@@ -78,7 +80,7 @@
 
             .photocard {
                 @include size-produ;
-            margin-top: 80px;
+            margin-top: 100px;
                 transform: translateY(130px);
 
 
