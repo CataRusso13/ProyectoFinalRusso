@@ -12,7 +12,8 @@ main {
         width: 80%;
         height: 500px;
         justify-content: start;
-
+        margin-left: 200px;
+    
 
         .carousel1 {
             width: 408px;
@@ -24,6 +25,7 @@ main {
         .infocarrito {
             margin-top: 100px;
             margin-left: 40px;
+
             p{
             margin-left: 10px;
             }
@@ -79,12 +81,9 @@ main {
         }
     }
 
-
-
-
-
-    .details {
-        margin-left: 100px;
+.details {
         margin-top: 50px;
+        margin-left: 300px;
     }
+
 }

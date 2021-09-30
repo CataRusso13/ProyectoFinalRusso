@@ -198,7 +198,8 @@ main .producto {
   display: flex;
   width: 80%;
   height: 500px;
-  justify-content: start; }
+  justify-content: start;
+  margin-left: 200px; }
   main .producto .carousel1 {
     width: 408px;
     height: 500px;
@@ -242,8 +243,8 @@ main .producto {
     color: black; }
 
 main .details {
-  margin-left: 100px;
-  margin-top: 50px; }
+  margin-top: 50px;
+  margin-left: 300px; }
 
 header {
   display: flex;
