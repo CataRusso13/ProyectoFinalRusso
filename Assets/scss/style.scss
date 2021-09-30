@@ -4,7 +4,8 @@
     @import "./_accessories.scss";
     @import "./_sale.scss";
     @import "./_checkout.scss";
-    @import "./producto1W";
+    @import "./producto1W.scss";
+    @import "./_wishlist.scss";
 
     @mixin size-produ {
         width: 200px;

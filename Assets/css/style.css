@@ -245,6 +245,24 @@ main .details {
   margin-left: 100px;
   margin-top: 50px; }
 
+main {
+  display: flex; }
+  main .info {
+    margin-left: 400px;
+    margin-top: 200px; }
+    main .info h1 {
+      font-size: 60px;
+      color: black; }
+    main .info p {
+      font-size: medium; }
+    main .info li {
+      list-style: none; }
+    main .info .homer {
+      width: 600px;
+      background-color: beige;
+      justify-content: flex-end;
+      margin-left: 80px; }
+
 header {
   display: flex;
   flex-direction: column; }
