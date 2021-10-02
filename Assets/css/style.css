@@ -245,23 +245,29 @@ main .details {
   margin-left: 100px;
   margin-top: 50px; }
 
-main {
-  display: flex; }
-  main .info {
-    margin-left: 400px;
-    margin-top: 200px; }
-    main .info h1 {
-      font-size: 60px;
-      color: black; }
-    main .info p {
-      font-size: medium; }
-    main .info li {
-      list-style: none; }
-    main .info .homer {
-      width: 600px;
-      background-color: beige;
-      justify-content: flex-end;
-      margin-left: 80px; }
+main .info {
+  margin-left: 300px;
+  margin-top: 200px; }
+  main .info h1 {
+    font-size: 40px;
+    color: black; }
+  main .info p {
+    font-size: medium; }
+  main .info li {
+    list-style: none; }
+
+main .homer {
+  transform: translateY(-300px);
+  width: 600px;
+  justify-content: flex-end;
+  margin-left: 600px; }
+
+main .sing {
+  border-radius: 4px; }
+
+main .register .btn {
+  color: white;
+  background-color: #BEAEE2; }
 
 header {
   display: flex;

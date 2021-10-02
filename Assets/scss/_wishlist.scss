@@ -1,27 +1,35 @@
 main {
-    display: flex;
+    
 
     .info {
-        margin-left: 400px;
+
+        margin-left: 300px;
         margin-top: 200px;
+     
         h1{
-            font-size: 60px;
+            font-size: 40px;
             color: black;
+          
+
         }
         p{
             font-size: medium;
+         
+        
         
         }
         li {
             list-style: none;
             
         }
-
+}
         .homer {
+            transform: translateY(-300px
+            );
             width: 600px;
-            background-color: beige;
+
             justify-content: flex-end;
-            margin-left: 80px;
+            margin-left: 600px;
         }
-    }
+    
 }
