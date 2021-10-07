@@ -1,70 +1,23 @@
-@mixin size-produ {
-    width: 200px;
-    height: 300px;
-    max-width: 100%;
-    display: block;
+@mixin men {        
+    width: 250px;
+    height: 350px;
 }
-
-@mixin color-sec {
-    color: #e9bede
-}
-
 @mixin color-font {
     color: rgb(148, 148, 148);
 }
 main{
-.codemen{
-    transform: translateX(200px);
-}
-
-.container{
-
-.item-text {
-    h2 {
-        margin-top: 10px;
+    .women-card{
+    .off{
         font-size: small;
-       @include color-font();
+        @include color-font;
     }
-
-    .red{
-    display: flex;
-        color: #de1b3c;
-        font-weight: bold;
-        align-items: center;
-    }
-    .btn{ 
-        color:white;
-        background-color:#BEAEE2;
-        display: flex;
-        justify-content: center;
-        margin-top: 10px
-    ;
-
+    .red{ 
+    color: #de1b3c;
     }
     .incorrecto{
-        transform: translateX(10px);
-    text-decoration: line-through;
-    @include color-font();
-    font-size: small
+        text-decoration: line-through;
+        font-size: small;
+        @include color-font;
+    } 
 }
-}
-
-.item-img {
-    @include size-produ;
-    transform: translateX(-40px);
-
-}
-}
-.pagination {
-    margin-right: 60px;
-    transform: translateY(20px);
-    a {
-        @include color-sec();
-    }
-}
-}
-footer {
-    margin-top: 100px;
-    border-top: 1px solid rgb(243, 237, 237);
-
 }
