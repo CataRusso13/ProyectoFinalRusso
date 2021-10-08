@@ -1,118 +1,99 @@
-    @import "./_women.scss";
-    @import "./_men.scss";
-    @import "./_carrito.scss";
-    @import "./_accessories.scss";
-    @import "./_sale.scss";
-    @import "./_checkout.scss";
-    @import "./_producto1W.scss";
-    @import "./_wishlist.scss";
-    @import "./_account.scss";
+@import "./_variables.scss";
+@import "./_home.scss";
 
-    @mixin size-produ {
-        width: 200px;
-        height: 300px;
-        max-width: 100%;
-        display: block;
-    }
 
-    header {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+}
+
+header {
+    .fiji-title {
+        height: 100px;
         display: flex;
-        flex-direction: column;
-    
-        .fiji {
-            display: flex;
-            justify-content: flex-end;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .logo-content {
             width: 100%;
-            color: #BEAEE2;
-
-            .marca {
-                padding-right: 1rem;
+            padding: 0;
+            margin: 0;
+            h1 {
+                font-family: 'IBM Plex Serif', serif;
+                color: $color1;
+                font-size: 40px
             }
-
-            .fijiylogo {
-                display: flex;
-                width: 120%;
-                justify-content: flex-end;
-
+            img {
+                    @include logo();
             }
-
-            .logo {
-
-                width: 60px;
-                height: 50px;
-            }
-
+            display: flex;
+            justify-content: center;
         }
-
         .icono3 {
-            height: 60px;
             display: flex;
-            justify-content: end;
-            width: 100%;
-
-            .icono {
-                color: #BEAEE2;
-                margin-top: 24px;
+            a {
+                padding-left: 2px;
+                color: $color1;
             }
         }
-
     }
 
+}
 
-    form {
-        .btn {
-            border: none;
-        }
+main {
+    font-family: 'Roboto Mono', monospace;    
+    min-height: 100vh;
+    margin-top: 3em;
+    margin-bottom: 10em;
+    .hero {
+        background-image: url("/assets/media/promo-men.png");
+        height:308px;
     }
-
-
-
-    main {
-
-        .card {
-            margin-bottom: 300px;
-            
-            border: none;
-            width: 80%;
-            height: 260px;
+    .content-women {
+        margin-top: 3em;
+        .row {
+            margin-top: 1em;
             display: flex;
             justify-content: space-around;
-            flex-direction: row;
-            transform: translateX(-60px);
-
-            .photocard {
-                @include size-produ;
-            margin-top: 100px;
-                transform: translateY(130px);
-
-
+            .women-card {
+                box-shadow: 14px -9px 18px -17px rgba(0,0,0,0.74);
+                -webkit-box-shadow: 14px -9px 18px -17px rgba(0,0,0,0.74);
+                -moz-box-shadow: 14px -9px 18px -17px rgba(0,0,0,0.74);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 250px;
+                height: 445px;
+                margin: 1em auto;
+                img {
+                    @include men();
+                }
+                h2 {
+                    color: $color2;
+                    font-size: 14px;
+                   transform: translateY(10px);
+                }
+                p {
+                    font-weight: bold;
+                   
+                }
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    text-align: center;
+                    background-color: $color1;
+                    border-radius: .2rem;
+                    width: 84px;
+                    padding: .3rem 0;
+                    font-size: .875rem;
+                    transition: all 0.4s;
+                }
+                a:hover {
+                    background-color: #ccc2e4;
+                }
             }
         }
-
-        .new {
-            margin-left: 155px;
-            margin-right: 155px;
-            height: 300px;
-            margin-top: 40px;
-            margin-bottom: 20px;
-        }
-
-        .sale {
-            transform: translateX(-170px);
-            margin-top: 10px;
-        }
-
-        .free {
-            width: 1550px;
-            margin-top: 20px;
-            transform: translateX(-10px);
-            transform: translateY(-620px);
-        }
     }
-
-    footer {
-
-        margin-top: 60px;
-        border-top: 1px solid rgb(243, 237, 237);
-
-    }
+}

@@ -1,338 +1,99 @@
-main .container {
-  display: grid;
-  width: 90%;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: 180px;
-  margin-top: 3em;
-  margin-bottom: 3em;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 60px; }
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap");
+main .hero-home {
+  background-image: url("/assets/media/fiji home.png");
+  height: 500px; }
 
-main .item-text h2 {
-  font-size: small;
-  color: #949494;
-  transform: translateX(-40px); }
-
-main .item-text p {
-  font-weight: bold;
-  margin-top: 20px; }
-
-main .item-text .btn {
-  color: white;
-  background-color: #BEAEE2; }
-
-main .item-img {
-  width: 200px;
-  height: 300px;
-  max-width: 100%;
-  display: block; }
-
-main .pagination {
-  margin-right: 60px;
-  transform: translateY(20px); }
-  main .pagination a {
-    color: #e9bede; }
-
-main footer {
-  margin-top: 100px;
-  border-top: 1px solid #f3eded; }
-
-main .codemen {
-  transform: translateX(200px); }
-
-main .container .item-text h2 {
-  font-size: small;
-  color: #949494; }
-
-main .container .item-text p {
-  font-weight: bold;
-  transform: translateX(10px); }
-
-main .container .item-text .btn {
-  color: white;
-  background-color: #BEAEE2; }
-
-main .container .item-img {
-  width: 200px;
-  height: 300px;
-  max-width: 100%;
-  display: block;
-  transform: translateX(-40px); }
-
-main .pagination {
-  margin-right: 60px;
-  transform: translateY(20px); }
-  main .pagination a {
-    color: #e9bede; }
-
-footer {
-  margin-top: 100px;
-  border-top: 1px solid #f3eded; }
-
-main .carrito {
-  display: flex;
-  align-items: center;
-  transform: translateX(200px);
-  width: 80%;
-  margin-top: 80px;
-  border-bottom: 1px solid #b6afaf;
-  border-top: 1px solid #b6afaf;
-  height: 400px; }
-  main .carrito .btn {
-    color: white;
-    background-color: #BEAEE2; }
-  main .carrito .checkout {
+main .content-home {
+  margin-top: 5em; }
+  main .content-home .cards-home {
     display: flex;
-    flex-direction: column;
-    transform: translateX(120px);
-    width: 260px; }
-    main .carrito .checkout .titleval {
-      align-self: flex-start; }
-    main .carrito .checkout .valores {
-      align-self: flex-end; }
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1em; }
+    main .content-home .cards-home img {
+      width: 250px;
+      height: 350px;
+      transition: all 0.5s; }
+    main .content-home .cards-home img:hover {
+      transform: translateY(10px); }
 
-main .carr-img {
-  width: 108px;
-  height: 150px; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: none; }
 
-main .infocarrito {
-  list-style: none;
-  width: 280px; }
-  main .infocarrito h1 {
-    font-size: medium; }
-  main .infocarrito li {
-    color: #949494;
-    font-size: small; }
-
-.code {
+header .fiji-title {
+  height: 100px;
   display: flex;
-  flex-direction: column;
-  transform: translateX(30px);
-  width: 200px; }
-  .code .promo {
-    width: 160px;
-    align-self: center;
-    margin-bottom: 10px; }
-
-main .codemen {
-  transform: translateX(200px); }
-
-main .container .item-text h2 {
-  font-size: small;
-  color: #949494; }
-
-main .container .item-text p {
-  font-weight: bold;
-  transform: translateX(10px); }
-
-main .container .item-text .btn {
-  color: white;
-  background-color: #BEAEE2; }
-
-main .container .item-img {
-  width: 200px;
-  height: 300px;
-  max-width: 100%;
-  display: block;
-  transform: translateX(-40px); }
-
-main .pagination {
-  margin-right: 60px;
-  transform: translateY(20px); }
-  main .pagination a {
-    color: #e9bede; }
-
-footer {
-  margin-top: 100px;
-  border-top: 1px solid #f3eded; }
-
-main .codemen {
-  transform: translateX(200px); }
-
-main .container .item-text h2 {
-  margin-top: 10px;
-  font-size: small;
-  color: #949494; }
-
-main .container .item-text .red {
-  display: flex;
-  color: #de1b3c;
-  font-weight: bold;
-  align-items: center; }
-
-main .container .item-text .btn {
-  color: white;
-  background-color: #BEAEE2;
-  display: flex;
+  flex-direction: row;
   justify-content: center;
-  margin-top: 10px; }
-
-main .container .item-text .incorrecto {
-  transform: translateX(10px);
-  text-decoration: line-through;
-  color: #949494;
-  font-size: small; }
-
-main .container .item-img {
-  width: 200px;
-  height: 300px;
-  max-width: 100%;
-  display: block;
-  transform: translateX(-40px); }
-
-main .pagination {
-  margin-right: 60px;
-  transform: translateY(20px); }
-  main .pagination a {
-    color: #e9bede; }
-
-footer {
-  margin-top: 100px;
-  border-top: 1px solid #f3eded; }
-
-a:link {
-  text-decoration: none; }
-
-main .producto {
-  display: flex;
-  width: 80%;
-  height: 500px;
-  justify-content: start;
-  margin-left: 200px; }
-  main .producto .carousel1 {
-    width: 408px;
-    height: 500px;
-    margin-left: 100px;
-    transform: translateY(40px); }
-  main .producto .infocarrito {
-    margin-top: 100px;
-    margin-left: 40px; }
-    main .producto .infocarrito p {
-      margin-left: 10px; }
-    main .producto .infocarrito .add {
-      margin-top: 10px;
-      margin-left: 10px;
-      width: 240px;
-      height: 30px;
-      color: white;
-      background-color: #BEAEE2;
-      border-radius: 4px;
-      border: 1px solid #693469; }
-    main .producto .infocarrito .redes {
-      margin-left: 80px;
-      margin-top: 20px; }
-      main .producto .infocarrito .redes i {
-        font-size: 20px; }
-    main .producto .infocarrito .icono {
-      color: #BEAEE2; }
-    main .producto .infocarrito .btn {
-      width: 40px;
-      border: 1px solid #575656;
-      background-color: white;
-      border-radius: 2px;
-      color: #a7a7a7;
-      transform: translateX(10px); }
-  main .producto .fa-star:hover {
-    color: #e9bede; }
-  main .producto .fa-circle {
-    color: #ad845e; }
-  main .producto .list {
-    list-style: none;
-    transform: translateX(-20px);
-    color: black; }
-
-main .details {
-  margin-top: 50px;
-  margin-left: 300px; }
-
-main .info {
-  margin-left: 300px;
-  margin-top: 200px; }
-  main .info h1 {
-    font-size: 40px;
-    color: black; }
-  main .info p {
-    font-size: medium; }
-  main .info li {
-    list-style: none; }
-
-main .homer {
-  transform: translateY(-300px);
-  width: 600px;
-  justify-content: flex-end;
-  margin-left: 600px; }
-
-main .sing {
-  border-radius: 4px; }
-
-main .register .btn {
-  color: white;
-  background-color: #BEAEE2; }
-
-header {
-  display: flex;
-  flex-direction: column; }
-  header .fiji {
-    display: flex;
-    justify-content: flex-end;
+  align-items: center; }
+  header .fiji-title .logo-content {
     width: 100%;
-    color: #BEAEE2; }
-    header .fiji .marca {
-      padding-right: 1rem; }
-    header .fiji .fijiylogo {
-      display: flex;
-      width: 120%;
-      justify-content: flex-end; }
-    header .fiji .logo {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; }
+    header .fiji-title .logo-content h1 {
+      font-family: 'IBM Plex Serif', serif;
+      color: #beaee2;
+      font-size: 40px; }
+    header .fiji-title .logo-content img {
       width: 60px;
       height: 50px; }
-  header .icono3 {
-    height: 60px;
-    display: flex;
-    justify-content: end;
-    width: 100%; }
-    header .icono3 .icono {
-      color: #BEAEE2;
-      margin-top: 24px; }
+  header .fiji-title .icono3 {
+    display: flex; }
+    header .fiji-title .icono3 a {
+      padding-left: 2px;
+      color: #beaee2; }
 
-form .btn {
-  border: none; }
-
-main .card {
-  margin-bottom: 300px;
-  border: none;
-  width: 80%;
-  height: 260px;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  transform: translateX(-60px); }
-  main .card .photocard {
-    width: 200px;
-    height: 300px;
-    max-width: 100%;
-    display: block;
-    margin-top: 100px;
-    transform: translateY(130px); }
-
-main .new {
-  margin-left: 155px;
-  margin-right: 155px;
-  height: 300px;
-  margin-top: 40px;
-  margin-bottom: 20px; }
-
-main .sale {
-  transform: translateX(-170px);
-  margin-top: 10px; }
-
-main .free {
-  width: 1550px;
-  margin-top: 20px;
-  transform: translateX(-10px);
-  transform: translateY(-620px); }
-
-footer {
-  margin-top: 60px;
-  border-top: 1px solid #f3eded; }
+main {
+  font-family: 'Roboto Mono', monospace;
+  min-height: 100vh;
+  margin-top: 3em;
+  margin-bottom: 10em; }
+  main .hero {
+    background-image: url("/assets/media/promo-men.png");
+    height: 308px; }
+  main .content-women {
+    margin-top: 3em; }
+    main .content-women .row {
+      margin-top: 1em;
+      display: flex;
+      justify-content: space-around; }
+      main .content-women .row .women-card {
+        box-shadow: 14px -9px 18px -17px rgba(0, 0, 0, 0.74);
+        -webkit-box-shadow: 14px -9px 18px -17px rgba(0, 0, 0, 0.74);
+        -moz-box-shadow: 14px -9px 18px -17px rgba(0, 0, 0, 0.74);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 250px;
+        height: 445px;
+        margin: 1em auto; }
+        main .content-women .row .women-card img {
+          width: 250px;
+          height: 350px; }
+        main .content-women .row .women-card h2 {
+          color: #949494;
+          font-size: 14px;
+          transform: translateY(10px); }
+        main .content-women .row .women-card p {
+          font-weight: bold; }
+        main .content-women .row .women-card a {
+          text-decoration: none;
+          color: #fff;
+          text-align: center;
+          background-color: #beaee2;
+          border-radius: .2rem;
+          width: 84px;
+          padding: .3rem 0;
+          font-size: .875rem;
+          transition: all 0.4s; }
+        main .content-women .row .women-card a:hover {
+          background-color: #ccc2e4; }
