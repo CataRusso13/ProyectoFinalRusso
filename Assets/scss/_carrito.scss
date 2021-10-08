@@ -1,0 +1,73 @@
+@mixin color-font {
+    color: rgb(148, 148, 148);
+}
+
+main {
+    .carrito {
+        display: flex;
+        align-items: center;
+        transform: translateX(200px);
+        width: 80%;
+        margin-top: 80px;
+        border-bottom: 1px solid rgb(182, 175, 175);
+        border-top: 1px solid rgb(182, 175, 175);
+        height: 400px;
+
+        .btn {
+            color: white;
+            background-color: #BEAEE2;
+        }
+
+        .checkout {
+            display: flex;
+            flex-direction: column;
+            transform: translateX(120px);
+            width: 260px;
+
+
+
+            .titleval {
+                align-self: flex-start;
+            }
+
+            .valores {
+                align-self: flex-end;
+            }
+        }
+    }
+
+    //info producto carrirto
+    .carr-img {
+        width: 108px;
+        height: 150px;
+    }
+
+    .infocarrito {
+        list-style: none;
+        width: 280px;
+
+
+        h1 {
+            font-size: medium;
+        }
+
+        li {
+            @include color-font;
+            font-size: small;
+        }
+    }
+}
+
+//promo codigo
+.code {
+    display: flex;
+    flex-direction: column;
+    transform: translateX(30px);
+    width: 200px;
+
+    .promo {
+        width: 160px;
+        align-self: center;
+        margin-bottom: 10px;
+    }
+}
