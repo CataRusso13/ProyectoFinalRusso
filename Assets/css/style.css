@@ -1,11 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap");
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap");
 main .hero-home {
   background-image: url("/assets/media/fiji home.png");
+=======
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap");
+main .hero-home {
+  background-image: url("/assets/Multimedia/Banners/fiji_home.png");
+>>>>>>> modificaciones
   height: 500px; }
 
 main .content-home {
@@ -22,6 +29,74 @@ main .content-home {
     main .content-home .cards-home img:hover {
       transform: translateY(10px); }
 
+<<<<<<< HEAD
+=======
+main .women-card .off {
+  font-size: small;
+  color: #949494; }
+
+main .women-card .red {
+  color: #de1b3c; }
+
+main .women-card .incorrecto {
+  text-decoration: line-through;
+  font-size: small;
+  color: #949494; }
+
+a:link {
+  text-decoration: none; }
+
+main .producto {
+  display: flex;
+  width: 80%;
+  height: 500px;
+  justify-content: start;
+  margin-left: 200px; }
+  main .producto .carousel1 {
+    width: 408px;
+    height: 500px;
+    margin-left: 100px;
+    transform: translateY(40px); }
+  main .producto .infocarrito {
+    margin-top: 100px;
+    margin-left: 40px; }
+    main .producto .infocarrito p {
+      margin-left: 10px; }
+    main .producto .infocarrito .add {
+      margin-top: 10px;
+      margin-left: 10px;
+      width: 240px;
+      height: 30px;
+      color: white;
+      background-color: #BEAEE2;
+      border-radius: 4px;
+      border: 1px solid #693469; }
+    main .producto .infocarrito .redes {
+      margin-left: 80px;
+      margin-top: 20px; }
+      main .producto .infocarrito .redes i {
+        font-size: 20px; }
+    main .producto .infocarrito .icono {
+      color: #BEAEE2; }
+    main .producto .infocarrito .btn {
+      width: 40px;
+      border: 1px solid #575656;
+      background-color: white;
+      border-radius: 2px;
+      color: #a7a7a7;
+      transform: translateX(10px); }
+  main .producto .fa-star:hover {
+    color: #e9bede; }
+  main .producto .list {
+    list-style: none;
+    transform: translateX(-20px);
+    color: black; }
+
+main .details {
+  margin-top: 50px;
+  margin-left: 300px; }
+
+>>>>>>> modificaciones
 * {
   margin: 0;
   padding: 0;
@@ -58,7 +133,11 @@ main {
   margin-top: 3em;
   margin-bottom: 10em; }
   main .hero {
+<<<<<<< HEAD
     background-image: url("/assets/media/promo-men.png");
+=======
+    background-image: url("/Assets/Multimedia/Banners/promo.png");
+>>>>>>> modificaciones
     height: 308px; }
   main .content-women {
     margin-top: 3em; }
