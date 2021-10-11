@@ -2,24 +2,24 @@
 
 main {
     .hero-home {
-<<<<<<< HEAD
         background-image: url("/assets/media/fiji\ home.png");
-=======
-        background-image: url("/assets/Multimedia/Banners/fiji_home.png");
->>>>>>> modificaciones
         height: 500px;
     }
+
     .content-home {
         margin-top: 5em;
+
         .cards-home {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
             gap: 1em;
+
             img {
                 @include men ();
                 transition: all 0.5s;
             }
+
             img:hover {
                 transform: translateY(10px);
             }

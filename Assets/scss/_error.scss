@@ -6,24 +6,29 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
     .info {
         h1 {
             color: $color1;
         }
+
         ul {
             font-family: 'IBM Plex Serif', serif;
             list-style: none;
+
             a {
                 font-size: 20px;
                 color: $color1;
                 transition: all 0.2s;
 
             }
+
             a:hover {
                 color: dimgrey;
             }
         }
     }
+
     .homer {
         height: 500px;
     }

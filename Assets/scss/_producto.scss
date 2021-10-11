@@ -1,86 +1,116 @@
-@mixin color-sec {
-    color: #e9bede
-}
+@import "./_variables.scss";
 
-a:link {
-    text-decoration: none;
-}
+.main-prod {
+    min-height: 400px;
 
-main {
-    .producto {
+    .producto-content {
         display: flex;
-        width: 80%;
-        height: 500px;
-        justify-content: start;
-        margin-left: 200px;
-    
+        justify-content: center;
+        gap: 2em;
 
-        .carousel1 {
-            width: 408px;
-            height: 500px;
-            margin-left: 100px;
-            transform: translateY(40px);
+        .img-content {
+
+            img {
+                width: 300px;
+            }
         }
 
-        .infocarrito {
-            margin-top: 100px;
-            margin-left: 40px;
+        .datos-prod {
+            transform: translateX(-10px);
 
-            p{
-            margin-left: 10px;
-            }
-            .add {
-                margin-top: 10px;
-                margin-left: 10px;
-                width: 240px;
-                height: 30px;
-                color: white;
-                background-color: #BEAEE2;
-                border-radius: 4px;
-                border: 1px solid rgb(105, 52, 105);
-
-            }
-
-            .redes {
-                margin-left: 80px;
-                margin-top: 20px;
+            .title-star {
+                h2 {
+                    font-size: 25px;
+                }
 
                 i {
+                    transform: translateY(-10px);
+                    transition: 0.2s;
+                    cursor: pointer;
+                }
+
+                i:hover {
                     font-size: 20px;
+                    color: $color1;
+
+                }
+
+                ul {
+                    list-style: none;
+
+                    li {
+                        color: $color2;
+                        font-size: small;
+                        transform: translateX(-30px);
+                    }
                 }
             }
 
-            .icono {
-                color: #BEAEE2;
-            }
+            .talle-add {
 
-            .btn {
+                .btn {
+                    border: 1px solid #ccc;
+                    width: 40px;
+                    color: #000;
+                    text-align: center;
+                }
 
-                width: 40px;
-                
-                border: 1px solid rgb(87, 86, 86);
-                background-color: white;
-                border-radius: 2px;
-                color: rgb(167, 167, 167);
-                transform: translateX(10px);
+                .not {
+                    color: $color2;
+                    text-decoration: line-through;
+                }
+
+                .redes-i {
+                    margin-top: 2em;
+
+                    #add {
+                        font-family: none;
+                        color: #fff;
+                        text-decoration: none;
+                        background-color: $color1;
+                        padding: 5px 80px;
+                        border-radius: .18rem;
+                        border: 1px solid $color2;
+                        transition: all 0.2s;
+
+                    }
+
+                    i {
+                        margin-left: 5px;
+                        transition: all 0.2s;
+                        color: rgb(194, 189, 189);
+                        cursor: pointer;
+                    }
+
+                    i:hover {
+                        font-size: 18px;
+
+                    }
+
+                    .redes {
+                        margin-top: 1em;
+                        transform: translatex(50px);
+                    }
+
+                }
             }
         }
 
-        .fa-star:hover {
-            @include color-sec;
-        }
+        .details-cont {
+            margin-top: 2em;
 
+            .details-1 {
+                h3 {
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: #000;
+                }
 
-        .list {
-            list-style: none;
-            transform: translateX(-20px);
-            color: black;
+                p {
+                    font-size: 14px;
+                    color: rgb(22, 22, 22);
+                }
+            }
         }
     }
-
-.details {
-        margin-top: 50px;
-        margin-left: 300px;
-    }
-
 }

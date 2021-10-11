@@ -1,18 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap");
-<<<<<<< HEAD
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap");
 main .hero-home {
   background-image: url("/assets/media/fiji home.png");
-=======
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap");
-main .hero-home {
-  background-image: url("/assets/Multimedia/Banners/fiji_home.png");
->>>>>>> modificaciones
   height: 500px; }
 
 main .content-home {
@@ -29,74 +31,177 @@ main .content-home {
     main .content-home .cards-home img:hover {
       transform: translateY(10px); }
 
-<<<<<<< HEAD
-=======
-main .women-card .off {
-  font-size: small;
-  color: #949494; }
+.main-prod {
+  min-height: 400px; }
+  .main-prod .producto-content {
+    display: flex;
+    justify-content: center;
+    gap: 2em; }
+    .main-prod .producto-content .img-content img {
+      width: 300px; }
+    .main-prod .producto-content .datos-prod {
+      transform: translateX(-10px); }
+      .main-prod .producto-content .datos-prod .title-star h2 {
+        font-size: 25px; }
+      .main-prod .producto-content .datos-prod .title-star i {
+        transform: translateY(-10px);
+        transition: 0.2s;
+        cursor: pointer; }
+      .main-prod .producto-content .datos-prod .title-star i:hover {
+        font-size: 20px;
+        color: #beaee2; }
+      .main-prod .producto-content .datos-prod .title-star ul {
+        list-style: none; }
+        .main-prod .producto-content .datos-prod .title-star ul li {
+          color: #949494;
+          font-size: small;
+          transform: translateX(-30px); }
+      .main-prod .producto-content .datos-prod .talle-add .btn {
+        border: 1px solid #ccc;
+        width: 40px;
+        color: #000;
+        text-align: center; }
+      .main-prod .producto-content .datos-prod .talle-add .not {
+        color: #949494;
+        text-decoration: line-through; }
+      .main-prod .producto-content .datos-prod .talle-add .redes-i {
+        margin-top: 2em; }
+        .main-prod .producto-content .datos-prod .talle-add .redes-i #add {
+          font-family: none;
+          color: #fff;
+          text-decoration: none;
+          background-color: #beaee2;
+          padding: 5px 80px;
+          border-radius: .18rem;
+          border: 1px solid #949494;
+          transition: all 0.2s; }
+        .main-prod .producto-content .datos-prod .talle-add .redes-i i {
+          margin-left: 5px;
+          transition: all 0.2s;
+          color: #c2bdbd;
+          cursor: pointer; }
+        .main-prod .producto-content .datos-prod .talle-add .redes-i i:hover {
+          font-size: 18px; }
+        .main-prod .producto-content .datos-prod .talle-add .redes-i .redes {
+          margin-top: 1em;
+          transform: translatex(50px); }
+    .main-prod .producto-content .details-cont {
+      margin-top: 2em; }
+      .main-prod .producto-content .details-cont .details-1 h3 {
+        font-size: 16px;
+        font-weight: bold;
+        color: #000; }
+      .main-prod .producto-content .details-cont .details-1 p {
+        font-size: 14px;
+        color: #161616; }
 
-main .women-card .red {
-  color: #de1b3c; }
+.main-carrito {
+  min-height: 500px; }
+  .main-carrito .carrito-content {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    margin: 5em auto; }
+    .main-carrito .carrito-content .container {
+      padding: 5em 0;
+      gap: 1em; }
+      .main-carrito .carrito-content .container .img-produc {
+        position: relative;
+        display: grid;
+        grid-template-areas: "foto titulo" "foto list"; }
+        .main-carrito .carrito-content .container .img-produc img {
+          grid-area: foto;
+          width: 108px;
+          height: 150px; }
+        .main-carrito .carrito-content .container .img-produc h2 {
+          padding: 0;
+          transform: translateX(20px);
+          grid-area: titulo;
+          font-size: medium; }
+        .main-carrito .carrito-content .container .img-produc ul {
+          color: #949494;
+          transform: translateX(-10px);
+          grid-area: list;
+          list-style: none;
+          font-size: 12px; }
+      .main-carrito .carrito-content .container .quantity-cont {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
+        .main-carrito .carrito-content .container .quantity-cont .content {
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+          .main-carrito .carrito-content .container .quantity-cont .content label {
+            font-size: small; }
+          .main-carrito .carrito-content .container .quantity-cont .content select {
+            text-align: center; }
+        .main-carrito .carrito-content .container .quantity-cont .code {
+          margin-left: 1em; }
+          .main-carrito .carrito-content .container .quantity-cont .code input {
+            text-align: start;
+            width: 130px; }
+          .main-carrito .carrito-content .container .quantity-cont .code button {
+            text-align: center;
+            width: 130px;
+            padding: 3px 0;
+            margin-top: 8px;
+            background-color: #beaee2;
+            color: #fff; }
+      .main-carrito .carrito-content .container .datos-compra h3 {
+        font-size: 15px; }
+      .main-carrito .carrito-content .container .datos-compra span {
+        text-align: end;
+        color: #949494; }
+      .main-carrito .carrito-content .container .datos-compra a {
+        width: 100px;
+        padding: 5px 0;
+        background-color: #beaee2;
+        color: #fff;
+        border: 1px solid #ccc;
+        border-radius: .18rem;
+        text-decoration: none;
+        text-align: center;
+        font-size: 13px;
+        transition: 0.2s; }
+      .main-carrito .carrito-content .container .datos-compra a:hover {
+        background-color: black; }
 
-main .women-card .incorrecto {
-  text-decoration: line-through;
-  font-size: small;
-  color: #949494; }
-
-a:link {
-  text-decoration: none; }
-
-main .producto {
+.mainError {
+  min-height: 50vh;
   display: flex;
-  width: 80%;
-  height: 500px;
-  justify-content: start;
-  margin-left: 200px; }
-  main .producto .carousel1 {
-    width: 408px;
-    height: 500px;
-    margin-left: 100px;
-    transform: translateY(40px); }
-  main .producto .infocarrito {
-    margin-top: 100px;
-    margin-left: 40px; }
-    main .producto .infocarrito p {
-      margin-left: 10px; }
-    main .producto .infocarrito .add {
-      margin-top: 10px;
-      margin-left: 10px;
-      width: 240px;
-      height: 30px;
-      color: white;
-      background-color: #BEAEE2;
-      border-radius: 4px;
-      border: 1px solid #693469; }
-    main .producto .infocarrito .redes {
-      margin-left: 80px;
-      margin-top: 20px; }
-      main .producto .infocarrito .redes i {
-        font-size: 20px; }
-    main .producto .infocarrito .icono {
-      color: #BEAEE2; }
-    main .producto .infocarrito .btn {
-      width: 40px;
-      border: 1px solid #575656;
-      background-color: white;
-      border-radius: 2px;
-      color: #a7a7a7;
-      transform: translateX(10px); }
-  main .producto .fa-star:hover {
-    color: #e9bede; }
-  main .producto .list {
-    list-style: none;
-    transform: translateX(-20px);
-    color: black; }
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+  .mainError .info h1 {
+    color: #beaee2; }
+  .mainError .info ul {
+    font-family: 'IBM Plex Serif', serif;
+    list-style: none; }
+    .mainError .info ul a {
+      font-size: 20px;
+      color: #beaee2;
+      transition: all 0.2s; }
+    .mainError .info ul a:hover {
+      color: dimgrey; }
+  .mainError .homer {
+    height: 500px; }
 
-main .details {
-  margin-top: 50px;
-  margin-left: 300px; }
+section .flecha {
+  color: white;
+  text-decoration: none;
+  font-size: larger; }
 
->>>>>>> modificaciones
+main .red {
+  color: #e00707; }
+
+main .incorrecto {
+  text-decoration: line-through;
+  color: #c2bdbd; }
+
 * {
   margin: 0;
   padding: 0;
@@ -114,6 +219,8 @@ header .fiji-title {
     margin: 0;
     display: flex;
     justify-content: center; }
+    header .fiji-title .logo-content a {
+      text-decoration: none; }
     header .fiji-title .logo-content h1 {
       font-family: 'IBM Plex Serif', serif;
       color: #beaee2;
@@ -132,12 +239,10 @@ main {
   min-height: 100vh;
   margin-top: 3em;
   margin-bottom: 10em; }
+  main .hero-home {
+    background-image: url("../Multimedia/Banners/fiji_home.png"); }
   main .hero {
-<<<<<<< HEAD
-    background-image: url("/assets/media/promo-men.png");
-=======
-    background-image: url("/Assets/Multimedia/Banners/promo.png");
->>>>>>> modificaciones
+    background-image: url("../Multimedia/Banners/promo.png");
     height: 308px; }
   main .content-women {
     margin-top: 3em; }

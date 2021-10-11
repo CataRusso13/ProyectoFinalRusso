@@ -1,5 +1,10 @@
 @import "./_variables.scss";
 @import "./_home.scss";
+@import "./_producto.scss";
+@import "./_carrito.scss";
+@import "./_error.scss";
+@import "./_account.scss";
+@import "./_sale.scss";
 
 
 * {
@@ -21,10 +26,15 @@ header {
             padding: 0;
             margin: 0;
 
+            a {
+                text-decoration: none;
+            }
+
             h1 {
                 font-family: 'IBM Plex Serif', serif;
                 color: $color1;
-                font-size: 40px
+                font-size: 40px;
+
             }
 
             img {
@@ -53,8 +63,12 @@ main {
     margin-top: 3em;
     margin-bottom: 10em;
 
+    .hero-home {
+        background-image: url("../Multimedia/Banners/fiji_home.png");
+    }
+
     .hero {
-        background-image: url("/assets/media/promo-men.png");
+        background-image: url("../Multimedia/Banners/promo.png");
         height: 308px;
     }
 
