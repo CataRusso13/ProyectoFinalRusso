@@ -63,10 +63,9 @@ main {
     margin-top: 3em;
     margin-bottom: 10em;
 
-    .hero-home {
-        background-image: url("../Multimedia/Banners/fiji_home.png");
-    }
-
+        .hero-home{
+        width: 100%;
+        }
     .hero {
         background-image: url("../Multimedia/Banners/promo.png");
         height: 308px;
