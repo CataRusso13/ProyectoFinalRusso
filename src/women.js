@@ -1,5 +1,3 @@
-
-
 let itemRow = document.querySelector("#row");
 class products {
     constructor(id, name, price, img) {
@@ -12,7 +10,7 @@ class products {
 }
 
 const prods = [];
-
+const bag1 = JSON.parse(localStorage.getItem('BagCloud')) || [];
 
 const card1 = new products ( 1, "Colorblock Drop-Sleeve", 3550,"../Assets/Multimedia/fotos_women/Colorblock Drop-Sleeve Shirt 1.webp");
 const card2 = new products ( 2, "Hot Wheels Graphic Cami", 2000,"../Assets/Multimedia/fotos_women/Hot Wheels Graphic Cami 1.jpg");
@@ -28,21 +26,11 @@ let items = document.createElement("div");
                         <p>$${item.price}</p>
                         <a id=${item.id} class=" btn  addToBag ">Add to bag</a>`
     itemRow.appendChild(items)
-    
+    let addToBagButton = document.getElementById(`${item.id}`);
+    addToBagButton.addEventListener('click', bagButton);
 }
-////let cart1 = [];
-//const DOMitems = document.querySelector('.items');
-//const DOMcarrito = document.querySelector('.cart1');
-//const DOMtotal = document.querySelector('.total');
-//const DOMbotonVaciar = document.querySelector('.button-remove');
 
-//const miButton = document.querySelector('#miButton');
-//miButton.innerHTM= `<button class="btn btn-primary miButton">+</button> `
-        //miButton.setAttribute('marcador', info.id);
-        //miButton.addEventListener('click', addToCart);
-
-//function addToCart (event) {
-    //cart1.push(event.target.getAttribute('marcador', ));
-   // renderizarCart1();
-
-//}
+function bagButton (item) {
+    bag1.push(item);
+    localStorage.setItem("BagCloud", item);
+}
