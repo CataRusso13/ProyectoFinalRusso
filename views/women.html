@@ -81,22 +81,34 @@
         <section id="sectionId" class="container content-women">
             <!-- row -->
             <div id="row" class="row">
-                
+
             </div>
         </section>
 
         <!-- Bag  -->
-        <div id = "bagShop">
-        <button type="button" class="btn-primary p-2" data-bs-target="#modalCart" data-bs-toggle="modal">Bag</button>
-        <div class="modal fade" id="modalCart" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h3>Bag</h3>
+        <div id="cart">
+            <button  type="button" class="btn-primary p-2" data-bs-target="#modalCart" data-bs-toggle="modal">Cart</button>
+            <div class="modal fade" id="modalCart" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>Cart</h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body items">
+                            <ul id="cart1" class="list-group"></ul>
+                        </div>
+                        <div class="modal-footer total">
+                            <div> <button type="button" class="btn button-remove">Remove items</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
-
-    <!-- footer -->
+    <!--
+                                    footer -->
 
     <div class="container">
         <footer class="py-5 foot">
@@ -135,7 +147,8 @@
                         <h5>Subscribe to our newsletter</h5>
                         <p>Monthly digest of whats new and exciting from us.</p>
                         <div class="d-flex w-100 gap-2">
-                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <label for="newsletter1" class="visually-hidden">Email
+                                address</label>
                             <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
                             <button type="button" class="btn btn-light">Subscribe</button>
                         </div>
