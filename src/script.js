@@ -43,5 +43,5 @@ function render() {
 function bagButton(item) {
     bag.push(item);
     render();
-    localStorage.setItem("carrito", JSON.stringify(item));
+    localStorage.setItem("carrito", JSON.stringify(bag));
 }
