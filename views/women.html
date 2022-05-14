@@ -29,8 +29,7 @@
 
             <div class="icono3">
                 <a><i class="far fa-user  icono"></i></a>
-                <a><i class="far fa-heart  icono"></i></a>
-                <a><i class="fas fa-shopping-cart  icono"></i></a>
+                <a><i class="fas fa-shopping-cart icono" data-bs-target="#modalCart" data-bs-toggle="modal"></i></a>
             </div>
 
         </div>
@@ -38,7 +37,7 @@
         <!-- navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light ">
             <div class="container-fluid">
-                <a class="logo navbar-brand" href="../index.html">Home</a>
+                <a class="logo navbar-brand" href="">Home</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -49,14 +48,14 @@
                             <a class="nav-link  " aria-current="page" href="../views/women.html">Women</a>
                         </li>
                         <li class="nav-item">
-                            <a class=" nav-link " href="../views/men.html">Men</a>
+                            <a class=" nav-link " href="">Men</a>
 
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../views/accessories.html">Accessories</a>
+                            <a class="nav-link" href="">Accessories</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../views/sale.html">Sale</a>
+                            <a class="nav-link" href="">Sale</a>
                         </li>
                     </ul>
                 </div>
@@ -64,14 +63,14 @@
                     <div class="container-fluid">
                         <form class="form d-flex">
                             <input class="form-control me-2 search" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn"><i class="fas fa-search fa-lg"></i></button>
+                            <button class="btn searchBtn"><i class="fas fa-search fa-lg"></i></button>
                         </form>
                     </div>
                 </nav>
             </div>
         </nav>
     </header>
-    <main class="container">
+        <main class="container">
         <!-- hero -->
 
         <div class="container hero">
@@ -87,7 +86,6 @@
 
         <!-- Bag  -->
         <div id="cart">
-            <button  type="button" class="btn-primary p-2" data-bs-target="#modalCart" data-bs-toggle="modal">Cart</button>
             <div class="modal fade" id="modalCart" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -181,7 +179,7 @@
     </script>
     <script src="sweetalert2.all.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../src/script.js"></script>
+    <script src="../src/main.js"></script>
 </body>
 
 </html>
