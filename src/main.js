@@ -107,7 +107,7 @@ function shopItemsButton() {
         return new Promise(resp=>{
             setTimeout(() =>{
                 localStorage.setItem('todeliver', JSON.stringify(bag));
-                localStorage.remove('carrito')
+                localStorage.removeItem('carrito')
                 bag.splice(length)
                 render();
             },800)
